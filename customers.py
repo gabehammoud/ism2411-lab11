@@ -1,6 +1,16 @@
 
 # module 11 lab 
 
+# reflection
+# 1.
+# I would use .get() when a key might be missing because it prevents errors
+# I would use bracket notation when I know the key exists and need its value
+
+# 2.
+# Exercise 8 reminds me of using a PivotTable in Excel to summarize data
+# Python is more useful for large datasets because it can automate calculations
+# and process information without manually updating spreadsheets
+
 # exercise 1
 
 customer = {
