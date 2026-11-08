@@ -78,3 +78,30 @@ for person in customers:
     discount_amount = 300 * discount_rate
 
     print(f"{name} ({tier}): ${discount_amount:.2f} discount")
+
+# exercise 7 
+
+print("\nExercise 7:")
+catalog = {
+    "Widget A": {"price": 9.99, "stock": 150},
+    "Gadget C": {"price": 49.99, "stock": 8}
+}
+for product, details in catalog.items():
+    if details["stock"] < 20:
+        print(f"LOW STOCK: {product} - {details['stock']} remaining")
+
+# exercise 8 
+
+print("\nExercise 8:")
+transactions = [
+    {"region": "South", "amount": 300},
+    {"region": "North", "amount": 150},
+    {"region": "South", "amount": 200}
+]
+regional_sales = {}
+for transaction in transactions:
+    region = transaction["region"]
+    amount = transaction["amount"]
+    regional_sales[region] = regional_sales.get(region, 0) + amount
+for region in sorted(regional_sales):
+    print(f"{region}: ${regional_sales[region]}")
